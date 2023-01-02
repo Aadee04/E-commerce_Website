@@ -1,0 +1,35 @@
+:root
+{
+    --cart-col:  #FFFFFF;
+    --dark-green:  #198754;
+}
+
+@font-face {
+    font-family: SFTransRobotics;
+    src: url(../External-Files/Font/sftransroboticsextended.woff);
+}
+
+
+.logo{
+    font-family: 'SFTransRobotics';
+}
+
+
+#center{
+    margin-left: 275px !important;
+}
+
+
+#cart:hover{
+    --cart-col:  #198754;
+    color: #198754;
+}
+
+
+#main-home{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(25, 135, 84, 0.75)), url(../External-Files/Images/Black.png);
+}
