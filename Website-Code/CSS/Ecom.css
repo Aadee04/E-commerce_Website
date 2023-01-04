@@ -33,3 +33,17 @@
     background-position: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(25, 135, 84, 0.75)), url(../../External-Files/Images/Black.png);
 }
+
+.greenHover{
+    text-decoration: none !important;
+}
+.greenHover:hover{
+    color: #09e980 !important;
+    text-decoration: none !important;
+}
+
+.greenHoverbtn:hover{
+    color: #FFFFFF !important;
+    background-color: #198754 !important;
+}
+Footer
