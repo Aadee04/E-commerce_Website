@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>CONTACT US | PC STOP</title>
+        <title>SHIPPING | PC STOP</title>
 
         <!-- CSS Styles -->
         <link rel="stylesheet" href="../CSS/Ecom.css">
@@ -10,58 +10,6 @@
         <!-- Bootstrap -->
         <link href="../../bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="../../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
-
-        <!--Validation-->
-        <script>
-          function validate(){
-          let name = document.getElementById('name').value;
-          let email = document.getElementById('email').value;
-          let tele = document.getElementById('phone').value;
-          let msg = document.getElementById('msg').value;
-          
-          if(name == null || name == "")
-          {
-              alert("Name must be filled!");
-              document.getElementById("name").focus();
-              return false;
-          }
-
-          if(!(name.match(/^[A-za-z\s]+$/))){
-              alert("Name must be Valid!");
-              document.getElementById("name").focus();
-              return false;
-          }
-
-          if(email == null || email == ""){
-              alert("E-Mail must be filled!");
-              document.getElementById("e-mail").focus();
-              return false;
-          }
-
-          if(tele == null || tele == ""){
-              alert("Telephone must be filled!");
-              document.getElementById("phone").focus();
-              return false;
-          }
-
-          if(!(tele.match(/^\d{10}$/))){
-              
-              alert("Telephone must be valid!");
-              document.getElementById("phone").focus();
-              return false;
-          }
-
-          if(msg == null || msg == ""){
-              alert("Message must be filled!");
-              document.getElementById("msg").focus();
-              return false;
-          }
-
-          else{
-            alert("We'll reach out to you in 3-5 business days. Thank you!")
-          }
-      }
-        </script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -106,46 +54,42 @@
             <div class="container p-5 bg-dark">
 
               <!--Header-->
-              <h2 class="text-white fw-bold mb-0">Contact Us</h2>
+              <h2 class="text-white fw-bold">Shipping Policy <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+              </svg></h2>
+              
               <hr style="height: 3px; border: none; background-color: white; opacity: 100%;" class="mt-1">
               <!--Header-->
 
-              <center><h5 class="text-white">We'd love to get in touch with you!</h5></center>
+              
 
-              <form class="text-white" onsubmit="return validate()" method="post">
-                <!-- Name input -->
-                <div class="mb-3">
-                  <label class="form-label" for="name">Name</label>
-                  <input class="form-control" id="name" type="text" placeholder="Name" name="name"/>
-                </div>
-                <!--Name Input-->
+              <!--Para-->
+              <p class="text-white">
+                
+                <span class=" text-decoration-underline fs-4 fw-bold">Our Shipping Partners</span>
+                <br>
+                Ordering an item from us? We can ship to virtually any address in India. Our Shipping partners are Speed Post, DTDC and Professional couriers. You can view the locations serviced by following this link and entering the Pincode <a href="https://www.indiapost.gov.in/vas/pages/LocatePostOffices.aspx">https://www.indiapost.gov.in/Pin/</a> for SpeedPost and <a href="https://www.dtdc.in/location-finder.asp">https://www.dtdc.in/location-finder.asp</a> for DTDC and <a href="https://www.tpcindia.com/network.aspx">https://www.tpcindia.com/network.aspx</a> for TPC . For locations not serviced by speedpost the product will be shipped through other alternate courier that is available. If a specific courier service or mode of shipping is required please e mail support@theitdepot.com mentioning the order number and courier details.
+                <br>
 
-                <!--Phone input -->
-                <div class="mb-3">
-                  <label class="form-label" for="phone">Phone Number</label>
-                  <input class="form-control" id="phone" type="tel" placeholder="Phone" name="phone"/>
-                </div>
-                <!--Phone Input-->
+                <br>
+                <span class=" text-decoration-underline fs-4 fw-bold">Delivery Time</span>
+                <br>
+                Usually all orders are processed and shipped within 24 hours, after payment is confirmed. However, certain categories of products have a different lead-time for delivery purely due to the nature of the product and market stock availability. We hold major stock but supply from our distributors is at times delayed at such times we keep the buyer informed.
+                <br>
+                Delivery dates are relative to your location.  You can track the status of your shipment with the docket number that will be mailed to you. Please visit <a href="https://www.indiapost.gov.in/VAS/Pages/IndiaPosthome.aspx" class="contact-form" target="_blank">https://www.indiapost.gov.in/Tracking.aspx</a> for SpeedPost, <a href="https://www.dtdc.in/tracking/shipment-tracking.asp" class="contact-form" target="_blank">https://www.dtdc.in/tracking/shipment-tracking.asp</a> for DTDC and <a href="https://www.tpcindia.com/Default.aspx" class="contact-form" target="_blank">https://www.tpcindia.com/Default.aspx</a> for TPC and <a href="http://www.fedex.com/in/domestic/track/" class="contact-form" target="_blank">http://www.fedex.com/in/domestic/track/</a> for FEDEX and feed in your docket number to know the status of the shipment.
+                <br>
 
-                <!-- Email address input -->
-                <div class="mb-3">
-                  <label class="form-label" for="email">Email Address</label>
-                  <input class="form-control" id="email" type="email" placeholder="Email Address" name="email"/>
-                </div>
-                <!-- Email address input -->
+                <br>
+                <span class=" text-decoration-underline fs-4 fw-bold">Calculating Cost</span>
+                <br>
+                Shipping costs for orders from Theitdepot.com depend upon the weight of the product interms of physical weight or volumetric weight whichever is higher. To reflect the policies of the shipping companies we use, all weights will be rounded up to the next full Kilogram.
 
-                <!-- Message -->
-                <div class="mb-3">
-                  <label class="form-label" for="message">Message</label>
-                  <textarea class="form-control" placeholder="Message" name="message" id="msg"></textarea>
-                </div>
-                <!-- Message -->
+                <br>
+                <br>
+                <span class="fs-5 fw-bold"><center style="color: white; font-size: large; font-weight: bold; margin-bottom: 0px;">All orders are dispatched with free transit insurance to protect your order from damage or pilferage </center></span>
+              </p>
+              <!--Para-->
 
-                <div class="d-grid">
-                  <button class="btn greenHoverbtn btn-outline-light" type="submit">Submit</button>
-                </div>
-
-              </form>
             </div>
         </div>
         <!-- Main Content -->
@@ -315,5 +259,4 @@
         <!-- End of .container -->
        
     </body>
-    
 </html>

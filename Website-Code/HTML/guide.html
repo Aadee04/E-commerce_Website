@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>CONTACT US | PC STOP</title>
+        <title>QUICK GUIDE | PC STOP</title>
 
         <!-- CSS Styles -->
         <link rel="stylesheet" href="../CSS/Ecom.css">
@@ -10,58 +10,6 @@
         <!-- Bootstrap -->
         <link href="../../bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="../../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
-
-        <!--Validation-->
-        <script>
-          function validate(){
-          let name = document.getElementById('name').value;
-          let email = document.getElementById('email').value;
-          let tele = document.getElementById('phone').value;
-          let msg = document.getElementById('msg').value;
-          
-          if(name == null || name == "")
-          {
-              alert("Name must be filled!");
-              document.getElementById("name").focus();
-              return false;
-          }
-
-          if(!(name.match(/^[A-za-z\s]+$/))){
-              alert("Name must be Valid!");
-              document.getElementById("name").focus();
-              return false;
-          }
-
-          if(email == null || email == ""){
-              alert("E-Mail must be filled!");
-              document.getElementById("e-mail").focus();
-              return false;
-          }
-
-          if(tele == null || tele == ""){
-              alert("Telephone must be filled!");
-              document.getElementById("phone").focus();
-              return false;
-          }
-
-          if(!(tele.match(/^\d{10}$/))){
-              
-              alert("Telephone must be valid!");
-              document.getElementById("phone").focus();
-              return false;
-          }
-
-          if(msg == null || msg == ""){
-              alert("Message must be filled!");
-              document.getElementById("msg").focus();
-              return false;
-          }
-
-          else{
-            alert("We'll reach out to you in 3-5 business days. Thank you!")
-          }
-      }
-        </script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -106,46 +54,27 @@
             <div class="container p-5 bg-dark">
 
               <!--Header-->
-              <h2 class="text-white fw-bold mb-0">Contact Us</h2>
+              <h2 class="text-white fw-bold">Quick Guide</h2>
               <hr style="height: 3px; border: none; background-color: white; opacity: 100%;" class="mt-1">
               <!--Header-->
 
-              <center><h5 class="text-white">We'd love to get in touch with you!</h5></center>
+              
 
-              <form class="text-white" onsubmit="return validate()" method="post">
-                <!-- Name input -->
-                <div class="mb-3">
-                  <label class="form-label" for="name">Name</label>
-                  <input class="form-control" id="name" type="text" placeholder="Name" name="name"/>
-                </div>
-                <!--Name Input-->
+              <!--Para-->
+              <p class="text-white">
+                Is our motto, we believe that a business is only as strong as its employees.
+                <br>
+                We at PC STOP need people who are interested in Computers and are willing to learn how to prepare, assemble and setup computers.
+                <br>
+                We could also use help from those who have built computers, worked with Computer software and have an entrepreneurial mindset. We have just started out and have a lot to learn from those who know more than us. 
+                <br>
+                If you think you can contribute in a special way to our vision please contact us at <a href="mailto:careers@pcstop.com" class="greenHover">careers@pcstop.com</a>
+              </p>
+              <!--Para-->
 
-                <!--Phone input -->
-                <div class="mb-3">
-                  <label class="form-label" for="phone">Phone Number</label>
-                  <input class="form-control" id="phone" type="tel" placeholder="Phone" name="phone"/>
-                </div>
-                <!--Phone Input-->
-
-                <!-- Email address input -->
-                <div class="mb-3">
-                  <label class="form-label" for="email">Email Address</label>
-                  <input class="form-control" id="email" type="email" placeholder="Email Address" name="email"/>
-                </div>
-                <!-- Email address input -->
-
-                <!-- Message -->
-                <div class="mb-3">
-                  <label class="form-label" for="message">Message</label>
-                  <textarea class="form-control" placeholder="Message" name="message" id="msg"></textarea>
-                </div>
-                <!-- Message -->
-
-                <div class="d-grid">
-                  <button class="btn greenHoverbtn btn-outline-light" type="submit">Submit</button>
-                </div>
-
-              </form>
+              <!--Image-->
+              <img src="../../External-Files/Images/careers.jpg" class="rounded mx-auto d-block" width="240px" height="200px" alt="...">
+              <!--Image-->
             </div>
         </div>
         <!-- Main Content -->
@@ -315,5 +244,4 @@
         <!-- End of .container -->
        
     </body>
-    
 </html>
