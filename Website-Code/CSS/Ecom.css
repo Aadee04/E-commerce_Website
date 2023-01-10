@@ -4,6 +4,8 @@
     --dark-green:  #198754;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;400&display=swap');
+
 @font-face {
     font-family: SFTransRobotics;
     src: url(../../External-Files/Font/sftransroboticsextended.woff);
@@ -116,4 +118,16 @@
     width: auto;
     margin-left: auto;
   }
+.copyright{
+    font-family: 'sans-serif';
+}
+
+.links-head{
+    font-family: 'Noto Sans Mono';
+    font-weight: bold;
+}
+
+.links{
+    font-family: monospace;
+}
 
