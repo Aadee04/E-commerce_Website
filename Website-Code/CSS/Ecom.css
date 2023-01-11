@@ -111,3 +111,17 @@
     transform: translateX(-6px);
 }
 
+
+.copyright{
+    font-family: 'sans-serif';
+}
+
+.links-head{
+    font-family: 'Noto Sans Mono';
+    font-weight: bold;
+}
+
+.links{
+    font-family: monospace;
+}
+
