@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>Contact Us | PC STOP</title>
+        <title>CONTACT US | PC STOP</title>
 
         <!-- CSS Styles -->
         <link rel="stylesheet" href="../CSS/Ecom.css">
@@ -11,8 +11,56 @@
         <link href="../../bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="../../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Font Links -->
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;400&display=swap" rel="stylesheet">        
+        <!--Validation-->
+        <script>
+          function validate(){
+          let name = document.getElementById('name').value;
+          let email = document.getElementById('email').value;
+          let tele = document.getElementById('phone').value;
+          let msg = document.getElementById('msg').value;
+          
+          if(name == null || name == "")
+          {
+              alert("Name must be filled!");
+              document.getElementById("name").focus();
+              return false;
+          }
+
+          if(!(name.match(/^[A-za-z\s]+$/))){
+              alert("Name must be Valid!");
+              document.getElementById("name").focus();
+              return false;
+          }
+          
+          if(tele == null || tele == ""){
+              alert("Telephone must be filled!");
+              document.getElementById("phone").focus();
+              return false;
+          }
+          
+          if(!(tele.match(/^\d{10}$/))){
+              alert("Telephone must be valid!");
+              document.getElementById("phone").focus();
+              return false;
+          }
+
+          if(email == null || email == ""){
+              alert("E-Mail must be filled!");
+              document.getElementById("e-mail").focus();
+              return false;
+          }
+
+          if(msg == null || msg == ""){
+              alert("Message must be filled!");
+              document.getElementById("msg").focus();
+              return false;
+          }
+
+          else{
+            alert("We'll reach out to you in 3-5 business days. Thank you!")
+          }
+      }
+        </script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -27,7 +75,7 @@
             <!-- Centered Logo/Title -->
             <div class="container col-7 justify-content-end d-flex">
               <a class="navbar-brand" href="home.html">
-                <img src="../../External-Files/Images/PC-Logo.png" alt="Avatar Logo" style="width:40px;" class="me-3"> 
+                <img src="../../External-Files/Images/PC-Logo3.png" alt="Avatar Logo" style="width:40px;" class="me-3"> 
               </a>
             
               <span class="align-middle">
@@ -57,35 +105,46 @@
             <div class="container p-5 bg-dark">
 
               <!--Header-->
-              <u><h2 class="text-white fw-bold text-decoration-underline">Contact Us</h2></u>
+              <h2 class="text-white fw-bold mb-0">Contact Us</h2>
+              <hr style="height: 3px; border: none; background-color: white; opacity: 100%;" class="mt-1">
               <!--Header-->
 
-              <!--Quote/Motto-->
-              <figure class="text-center">
-                <blockquote class="blockquote text-white">
-                  You don't build a business, You build people, then people build the business. 
-                </blockquote>
-                <figcaption class="blockquote-footer">
-                  Zig Ziglar
-                </figcaption>
-              </figure>
-              <!--Quote/Motto-->
+              <center><h5 class="text-white">We'd love to get in touch with you!</h5></center>
 
-              <!--Para-->
-              <p class="text-white">
-                Is our motto, we believe that a business is only as strong as its employees.
-                <br>
-                We at PC STOP need people who are interested in Computers and are willing to learn how to prepare, assemble and setup computers.
-                <br>
-                We could also use help from those who have built computers, worked with Computer software and have an entrepreneurial mindset. We have just started out and have a lot to learn from those who know more than us. 
-                <br>
-                If you think you can contribute in a special way to our vision please contact us at <a href="mailto:careers@pcstop.com" class="greenHover">careers@pcstop.com</a>
-              </p>
-              <!--Para-->
+              <form class="text-white" onsubmit="return validate()" method="post">
+                <!-- Name input -->
+                <div class="mb-3">
+                  <label class="form-label" for="name">Name</label>
+                  <input class="form-control" id="name" type="text" placeholder="Name" name="name"/>
+                </div>
+                <!--Name Input-->
 
-              <!--Image-->
-              <img src="../../External-Files/Images/careers.jpg" class="rounded mx-auto d-block" width="240px" height="200px" alt="...">
-              <!--Image-->
+                <!--Phone input -->
+                <div class="mb-3">
+                  <label class="form-label" for="phone">Phone Number</label>
+                  <input class="form-control" id="phone" type="tel" placeholder="Phone" name="phone"/>
+                </div>
+                <!--Phone Input-->
+
+                <!-- Email address input -->
+                <div class="mb-3">
+                  <label class="form-label" for="email">Email Address</label>
+                  <input class="form-control" id="email" type="email" placeholder="Email Address" name="email"/>
+                </div>
+                <!-- Email address input -->
+
+                <!-- Message -->
+                <div class="mb-3">
+                  <label class="form-label" for="message">Message</label>
+                  <textarea class="form-control" placeholder="Message" name="message" id="msg"></textarea>
+                </div>
+                <!-- Message -->
+
+                <div class="d-grid">
+                  <button class="btn greenHoverbtn btn-outline-light" type="submit">Submit</button>
+                </div>
+
+              </form>
             </div>
         </div>
         <!-- Main Content -->
@@ -105,15 +164,15 @@
                 <form action="">
                   <!--Grid row-->
                   <div class="row d-flex justify-content-center">
-                    <!--Sign up column-->
+                    <!--Grid column-->
                     <div class="col-auto">
                       <p class="pt-2">
                         <strong>Sign up to get our Latest Offers!</strong>
                       </p>
                     </div>
-                    <!--Sign up column-->
+                    <!--Grid column-->
   
-                    <!--Email address column-->
+                    <!--Grid column-->
                     <div class="col-md-5 col-12">
                       <!-- Email input -->
                       <div class="form-outline form-white mb-4">
@@ -121,7 +180,7 @@
                         <label class="form-label" for="form5Example2">Email address</label>
                       </div>
                     </div>
-                    <!--Email address column-->
+                    <!--Grid column-->
   
                     <!--Grid column-->
                     <div class="col-auto">
@@ -139,12 +198,12 @@
   
   
               <!-- Section: Links -->
-              <section class="links">
+              <section class="">
                 <!--Grid row-->
                 <div class="row">
-                  <!--Products column-->
+                  <!--Grid column-->
                   <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase links-head">Products</h5>
+                    <h5 class="text-uppercase">Products</h5>
   
                     <ul class="list-unstyled mb-0">
                       <li>
@@ -158,32 +217,32 @@
                       </li>
                     </ul>
                   </div>
-                  <!--Products column-->
+                  <!--Grid column-->
   
-                  <!--Useful Links column-->
+                  <!--Grid column-->
                   <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase links-head">Useful Links</h5>
+                    <h5 class="text-uppercase">Useful Links</h5>
   
                     <ul class="list-unstyled mb-0">
                       <li>
-                        <a href="#!" class="text-white greenHover">Quick Guide</a>
+                        <a href="guide.html" class="text-white greenHover">Quick Guide</a>
                       </li>
                       <li>
-                        <a href="#!" class="text-white greenHover">Terms & Conditions</a>
+                        <a href="terms.html" class="text-white greenHover">Terms & Conditions</a>
                       </li>
                       <li>
-                        <a href="#!" class="text-white greenHover">Privacy Policy</a>
+                        <a href="privacy.html" class="text-white greenHover">Privacy Policy</a>
                       </li>
                       <li>
-                        <a href="#!" class="text-white greenHover">Shipping Policy</a>
+                        <a href="shipping.html" class="text-white greenHover">Shipping Policy</a>
                       </li>
                     </ul>
                   </div>
-                  <!--Useful Links column-->
+                  <!--Grid column-->
   
-                  <!--Help & Support column-->
+                  <!--Grid column-->
                   <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase links-head">Help & Support</h5>
+                    <h5 class="text-uppercase">Help & Support</h5>
   
                     <ul class="list-unstyled mb-0">
                       <li>
@@ -200,7 +259,7 @@
                       </li>
                     </ul>
                   </div>
-                  <!--Help & Support column-->
+                  <!--Grid column-->
   
                 </div>
                 <!--Grid row-->
@@ -243,7 +302,7 @@
             <!-- Section: Social media -->
   
             <!-- Copyright -->
-            <div class="text-center p-3 copyright" style="background-color: rgba(0, 0, 0, 0.2);">
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
               Copyright © 2023 PC STOP - All Rights Reserved
             </div>
             <!-- Copyright -->
@@ -255,4 +314,5 @@
         <!-- End of .container -->
        
     </body>
+    
 </html>
