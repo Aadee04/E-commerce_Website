@@ -3,24 +3,37 @@
 <html>
     <head>
         <title>Home | PC STOP</title>
-        <link rel="icon" href="../../External-Files/Images/PC-Logo.png">
+        <link rel="icon" href="../../External-Files/Images/Tab_Icon.png"> <!-- Tab Icon -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!-- Font Links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;400&display=swap">        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
 
         <!-- CSS Styles -->
         <link rel="stylesheet" href="../CSS/Ecom.css">
+        
 
-        <!-- Bootstrap -->
-        <link href="../../bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="../../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
-        <!-- Font Links -->
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;400&display=swap" rel="stylesheet">        
+        </head>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    </head>
-
-    
-    <body>
+        <body>
+        <!-- Bootstrap link for Carousel -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- Bootstrap link for Carousel -->
 
         <!-- Nav Bar-->
         <nav class="navbar navbar-expand-sm bg-dark pe-3">
@@ -28,16 +41,18 @@
             <!-- Centered Logo/Title -->
             <div class="container col-7 justify-content-end d-flex">
               <a class="navbar-brand" href="home.html">
-                <img src="../../External-Files/Images/PC-Logo.png" alt="Avatar Logo" style="width:40px;" class="me-1"> 
+                <img src="../../External-Files/Images/PC-Logo.png" alt="Avatar Logo" style="width:40px;" class="me-3"> 
               </a>
             
-                <p class="fs-3 text-light mb-0 logo align-middle me-3">
+              <span class="align-middle">
+                <p class="fs-1 text-light mb-0 logo">
                     PC STOP
                 </p>
+              </span>
             </div> 
             <!-- Centered Logo/Title -->
 
-            <!-- Cart Icon -->
+            <!-- Cart -->
             <div class="container col-5 d-flex justify-content-end ">
                 <a href="#" class="text-decoration-none logo" id="cart" style="color: var(--cart-col);">
                   Cart
@@ -46,18 +61,176 @@
                   </svg>
                 </a>
             </div>
-            <!-- Cart Icon -->
+            <!-- Cart -->
 
         </nav>
         <!-- Nav Bar-->
 
-        <!-- Main Content -->
-        <div class="p-0 m-0 bg-success" id="main-home" style="height: 100vh;">
-            <main class="">
 
-            </main>
-        </div>
         <!-- Main Content -->
+          <div class="p-5 m-0" id="main-home">
+              <br>
+              
+            <!-- main content box -->
+            <div class="mx-auto me-auto bg-dark pb-5" style="width: 90%;"> <!-- max-width: 1700px; -->
+
+              <!-- Banner Carousel -->
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-pause="hover">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active" data-bs-interval="1">
+                        <img class="d-block w-100" src="../../External-Files/Images/banner_image1.png" style="max-height:550px;" alt="First slide">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="1">
+                        <img class="d-block w-100" src="../../External-Files/Images/banner_image2.jpeg" style="max-height:550px;" alt="Second slide">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="1">
+                      <img class="d-block w-100" src="../../External-Files/Images/banner_image3.jpeg" style="max-height:550px;" alt="Third slide">
+                  </div>
+
+                </div>
+
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+              </div>
+              <!-- Banner Carousel -->
+
+              <br>
+              <br>
+            
+              <!-- Home Options -->
+
+              <!-- Header for options -->
+                <div class="container col-md-10 bg-transparent border-0 justify-content-center d-flex mt-3 mb-5">
+                  <h3 class="text-white pe-5 px-5 pb-3 pt-3 align-middle" style="font-family: 'SFTransRobotics'; color: white; font-size: 50px;">CHOOSE AN OPTION FOR YOUR PC</h3>
+                </div>
+              <!-- Header for options -->
+
+              <div class="container col-md-10 bg-transparent border-0 justify-content-center d-flex">
+                
+                <!-- Custom PC option-->
+                <div class="card border-0 w-50 float-left mx-5">
+                  
+                  <video width="100%" loop muted autoplay>
+                    <source src="../../External-Files/Videos/Pc-Custom.mov" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                  
+                  <div class="card-header bg-white border-0">
+                    <h5 class="text-center card-title">Build Your Own PC</h5>
+                  </div>
+
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">Tailor-made for you</h6>
+                    <p class="card-text">With our custom PC building service, you can select from a wide range of components to create a computer that meets your specific needs and budget.</p>
+
+                    
+                    <button type="button" class="buttonslide slide-b float-end" data-toggle="modal" data-target="#exampleModalCenter">
+                      <div>Proceed</div>
+                      <i class="icon-arrow-right"></i>
+                    </button>
+                  
+                  </div>                  
+                </div>
+
+                  <!-- Pop-up box for custom PC option (Modal) -->
+                  <div class="modal fade w-100" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content bg-dark">
+
+                        <div class="modal-header text-white border-dark">
+                          <h6 class="modal-title m-auto" id="exampleModalLongTitle">Need Help Building PC?</h6>
+                          <button type="button" class="btn-close btn-close-white" data-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body">
+
+                          <div class="container-fluid">
+
+                            <div class="row">
+
+                              <div class="col-6 modal-text ml-auto">
+                                <button type="button" class="btn btn-success fs-5">Choose your own parts</button>
+                              </div>
+
+                              <div class="col-6 modal-text ml-auto">
+                                <button type="button" class="btn btn-success fs-5">Tell us your workload</button>
+                              </div>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                        <div class="modal-footer p-2 text-white border-dark">
+                        </div>
+                        
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- Pop-up box for custom PC option (Modal) -->
+
+                <!-- Custom PC option-->
+
+                <!-- OR -->
+                <div class="d-flex align-items-center">
+                  <h1 style="font-family: 'SFTransRobotics'; color: white; font-size: 100px;" class="align-middle ">OR</h1>
+                </div>
+                <!-- OR -->
+
+                <!-- Pre-built PC option-->
+                <div class="card border-0 w-50 float-right mx-5">
+                  
+                  <img class="card-img-top" src="../../External-Files/Images/Home-Box-2.png" alt="Card image cap">
+                  
+                  <div class="card-header bg-white border-0">
+                    <h5 class="text-center card-title">Choose a Pre-built PC</h5>
+                  </div>
+
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">Ready to go, out of the box!</h6>
+                    <p>If you're not sure where to start or don't have time to build your own computer, we offer a range of pre-built systems that are ready to go right out of the box.</p>
+
+                    <button type="button" class="buttonslide slide-b float-end" onclick="window.open('pre-built.html')">
+                      <div>Proceed</div>
+                      <i class="icon-arrow-right"></i>
+                    </button>
+                  
+                  </div>
+                
+                </div>
+                <!-- Pre-built PC option-->
+
+              </div>
+              <!-- Home Options -->
+            </div>
+            <!-- main content box -->
+        
+            <br><br>
+
+          </div>
+        <!-- Main Content -->
+
+        
 
         
         <!-- Remove the container if you want to extend the Footer to full width. -->
@@ -74,15 +247,15 @@
                 <form action="">
                   <!--Grid row-->
                   <div class="row d-flex justify-content-center">
-                    <!--Sign up column-->
+                    <!--Grid column-->
                     <div class="col-auto">
                       <p class="pt-2">
                         <strong>Sign up to get our Latest Offers!</strong>
                       </p>
                     </div>
-                    <!--Sign up column-->
+                    <!--Grid column-->
   
-                    <!--Email address column-->
+                    <!--Grid column-->
                     <div class="col-md-5 col-12">
                       <!-- Email input -->
                       <div class="form-outline form-white mb-4">
@@ -90,7 +263,7 @@
                         <label class="form-label" for="form5Example2">Email address</label>
                       </div>
                     </div>
-                    <!--Email address column-->
+                    <!--Grid column-->
   
                     <!--Grid column-->
                     <div class="col-auto">
@@ -108,12 +281,12 @@
   
   
               <!-- Section: Links -->
-              <section class="links">
+              <section class="">
                 <!--Grid row-->
                 <div class="row">
-                  <!--Products column-->
+                  <!--Grid column-->
                   <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase links-head">Products</h5>
+                    <h5 class="text-uppercase">Products</h5>
   
                     <ul class="list-unstyled mb-0">
                       <li>
@@ -123,36 +296,36 @@
                         <a href="#!" class="text-white greenHover">Personalized</a>
                       </li>
                       <li>
-                        <a href="#!" class="text-white greenHover">Pre-Built</a>
+                        <a href="pre-built.html" class="text-white greenHover">Pre-Built</a>
                       </li>
                     </ul>
                   </div>
-                  <!--Products column-->
+                  <!--Grid column-->
   
-                  <!--Useful Links column-->
+                  <!--Grid column-->
                   <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase links-head">Useful Links</h5>
+                    <h5 class="text-uppercase">Useful Links</h5>
   
                     <ul class="list-unstyled mb-0">
                       <li>
-                        <a href="#!" class="text-white greenHover">Quick Guide</a>
+                        <a href="guide.html" class="text-white greenHover">Quick Guide</a>
                       </li>
                       <li>
-                        <a href="#!" class="text-white greenHover">Terms & Conditions</a>
+                        <a href="terms.html" class="text-white greenHover">Terms & Conditions</a>
                       </li>
                       <li>
-                        <a href="#!" class="text-white greenHover">Privacy Policy</a>
+                        <a href="privacy.html" class="text-white greenHover">Privacy Policy</a>
                       </li>
                       <li>
-                        <a href="#!" class="text-white greenHover">Shipping Policy</a>
+                        <a href="shipping.html" class="text-white greenHover">Shipping Policy</a>
                       </li>
                     </ul>
                   </div>
-                  <!--Useful Links column-->
+                  <!--Grid column-->
   
-                  <!--Help & Support column-->
+                  <!--Grid column-->
                   <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase links-head">Help & Support</h5>
+                    <h5 class="text-uppercase">Help & Support</h5>
   
                     <ul class="list-unstyled mb-0">
                       <li>
@@ -169,7 +342,7 @@
                       </li>
                     </ul>
                   </div>
-                  <!--Help & Support column-->
+                  <!--Grid column-->
   
                 </div>
                 <!--Grid row-->
@@ -212,7 +385,7 @@
             <!-- Section: Social media -->
   
             <!-- Copyright -->
-            <div class="text-center p-3 copyright" style="background-color: rgba(0, 0, 0, 0.2);">
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
               Copyright © 2023 PC STOP - All Rights Reserved
             </div>
             <!-- Copyright -->
