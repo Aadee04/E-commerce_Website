@@ -136,3 +136,30 @@
 .modal-title{
     font-size: 24px;
 }
+
+.product{
+    background-color: #198754 !important;
+    transition: background-color 0.5s ease-out 100ms, color 0.5s ease-out 100ms;
+}
+
+.product .list-group-item{
+    border: #198754 5px solid !important;
+    border-radius: 40px !important;
+    transition: border-color 0.5s ease-out 100ms, background-color 0.5s ease-out 100ms, color 0.5s ease-out 100ms;
+}
+
+.product:hover{
+    background-color: black !important;
+    color: white !important;
+}
+
+.product:hover .list-group-item{
+    border-color: black !important;
+    background-color: white !important;
+    color: black !important;
+}
+
+.black{
+    background-color: black !important;
+}
+
